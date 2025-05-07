@@ -1,0 +1,65 @@
+{
+    "Date": "06.05.2025",
+    "teams": [
+        {
+            "name": "Alpine",
+            "logo": "alpine-logo.png",
+            "car": "alpine.png",
+            "ranking": 9
+        },
+        {
+            "name": "Aston Martin",
+            "logo": "aston-martin-logo.png",
+            "car": "aston-martin.png",
+            "ranking": 7
+        },
+        {
+            "name": "Ferrari",
+            "logo": "ferrari-logo.png",
+            "car": "ferrari.png",
+            "ranking": 4
+        },
+        {
+            "name": "Haas",
+            "logo": "haas-logo.png",
+            "car": "haas.png",
+            "ranking": 6
+        },
+        {
+            "name": "Kick Sauber",
+            "logo": "kick-sauber-logo.png",
+            "car": "kick-sauber.png",
+            "ranking": 10
+        },
+        {
+            "name": "McLaren",
+            "logo": "mclaren-logo.png",
+            "car": "mclaren.png",
+            "ranking": 1
+        },
+        {
+            "name": "Mercedes",
+            "logo": "mercedes-logo.png",
+            "car": "mercedes.png",
+            "ranking": 2
+        },
+        {
+            "name": "Racing Bulls",
+            "logo": "racing-bulls-logo.png",
+            "car": "racing-bulls.png",
+            "ranking": 8
+        },
+        {
+            "name": "Red Bull Racing",
+            "logo": "red-bull-racing-logo.png",
+            "car": "red-bull-racing.png",
+            "ranking": 3
+        },
+        {
+            "name": "Williams",
+            "logo": "williams-logo.png",
+            "car": "williams.png",
+            "ranking": 5
+        }
+    ]
+}

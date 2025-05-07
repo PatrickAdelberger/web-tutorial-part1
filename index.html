@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Web-Tutorial - Teil 1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- defer entfernen beim ersten mal -->
+    <script src="myScript.js" defer></script>
+</head>
+<body>
+    <h1 id="heading" onclick="clickHeading()">Meine Überschrift</h1>
+    <div id="general-">
+        <div>
+            <h2>Heading #2</h2>
+        </div>
+        <div class="class-bg">
+            <h3>Heading #3</h3>
+            <h4>Heading #4</h4>
+            <h5>Heading #5</h5>
+            <h6>Heading #6</h6>
+        </div>
+        <div>
+            <ol>
+                <li data-info="1">item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+        <div id="link-info" class="class-bg">
+            <p>Dokumentation zu den <span>Komponeneten</span> für die Webentwicklung:</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Web-Doku: HTML</a>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div>
+            <!-- hinzufügen von title und target nicht gleichg bei der Erstellung des Links -->
+            <a href="https://www.hartlauer.at" title="Gehe zur Hartlauer Homepage in neuem Tab" target="_blank">
+                <img id="hartlauer_logo" src=".\images\logo-hartlauer.png" alt="Hartlauer Logo">
+            </a>
+        </div>
+        <div>
+            <!-- erst nach dem clickHeading() die Form erstellen-->
+            <button id="myF1" >My Button</button>
+        </div>
+        <div>
+            <table id="hero-table">
+                <thead>
+                    <th>Verlag</th>
+                    <th>Pseudonym</th>
+                    <th>Vorname</th>
+                    <th>Nachname</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DC Comics</td>
+                        <td>Batman</td>
+                        <td>Bruce</td>
+                        <td>Wayne</td>
+                    </tr>
+                    <tr>
+                        <td>DC Comics</td>
+                        <td>Wonder Woman</td>
+                        <td>Diana</td>
+                        <td>Prince</td>
+                    </tr>
+                    <tr>
+                        <td>Marvel Comics</td>
+                        <td>Scarlet Witch</td>
+                        <td>Wanda</td>
+                        <td>Maximoff</td>
+                    </tr>
+                    <tr>
+                        <td>Marvel Comics</td>
+                        <td>Spider-Man</td>
+                        <td>Peter</td>
+                        <td>Parker</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="general2">
+    <div id="layout-grid">
+        <div id="grid-con-1" class="grid-class">1</div>
+        <div id="grid-con-2" class="grid-class">2</div>
+        <div id="grid-con-3" class="grid-class">3</div>
+        <div id="grid-con-4" class="grid-class">4</div>
+        <div id="grid-con-5" class="grid-class">5</div>
+        <div id="grid-con-6" class="grid-class">6</div>
+        <div id="grid-con-7" class="grid-class">7</div>
+        <div id="grid-con-8" class="grid-class">8</div>
+        <div id="grid-con-9" class="grid-class">9</div>
+        <div id="grid-con-10" class="grid-class">10</div>
+        <div id="grid-con-11" class="grid-class">11</div>
+        <div id="grid-con-12" class="grid-class">12</div>
+        <div id="grid-con-13" class="grid-class">13</div>
+        <div id="grid-con-14" class="grid-class">14</div>
+        <div id="grid-con-15" class="grid-class">15</div>
+    </div>
+    <hr>
+    <div id="layout-flex">
+        <div id="flex-con-1" class="flex-class">1</div>
+        <div id="flex-con-2" class="flex-class">2</div>
+        <div id="flex-con-3" class="flex-class">3</div>
+        <div id="flex-con-4" class="flex-class">4</div>
+        <div id="flex-con-5" class="flex-class">5</div>
+        <div id="flex-con-6" class="flex-class">6</div>
+        <div id="flex-con-7" class="flex-class">7</div>
+        <div id="flex-con-8" class="flex-class">8</div>
+        <div id="flex-con-9" class="flex-class">9</div>
+        <div id="flex-con-10" class="flex-class">10</div>
+        <div id="flex-con-11" class="flex-class">11</div>
+        <div id="flex-con-12" class="flex-class">12</div>
+        <div id="flex-con-13" class="flex-class">13</div>
+        <div id="flex-con-14" class="flex-class">14</div>
+        <div id="flex-con-15" class="flex-class">15</div>
+    </div>
+</div>
+
+
+<!-- SVG -->
+<div class="svg-container">
+    <svg id="svg" viewBox="0 0 250 250">
+        <rect x="18" y="18" width="30" height="20" style="fill: blue" />
+        <circle r="20" cx="50" cy="100" fill="green" />
+        <text x="100" y="30">Test</text>
+        <g id="mygroup" fill="white" stroke="green" stroke-width="1">
+            <circle cx="40" cy="40" r="25" />
+            <circle cx="60" cy="60" r="25" stroke-width="3" />
+        </g>
+      </svg>
+</div>
+
+
+<!--
+<div id="chess">
+    <div class="chess-field" id="chess-field1"></div>
+    <div class="chess-field" id="chess-field2"></div>
+    <div class="chess-field" id="chess-field3"></div>
+    <div class="chess-field" id="chess-field4"></div>
+    <div class="chess-field" id="chess-field5"></div>
+    <div class="chess-field" id="chess-field6"></div>
+    <div class="chess-field" id="chess-field7"></div>
+    <div class="chess-field" id="chess-field8"></div>
+    <div class="chess-field" id="chess-field9"></div>
+    <div class="chess-field" id="chess-field10"></div>
+    <div class="chess-field" id="chess-field11"></div>
+    <div class="chess-field" id="chess-field12"></div>
+    <div class="chess-field" id="chess-field13"></div>
+    <div class="chess-field" id="chess-field14"></div>
+    <div class="chess-field" id="chess-field15"></div>
+    <div class="chess-field" id="chess-field16"></div>
+    <div class="chess-field" id="chess-field17"></div>
+    <div class="chess-field" id="chess-field18"></div>
+    <div class="chess-field" id="chess-field19"></div>
+    <div class="chess-field" id="chess-field20"></div>
+    <div class="chess-field" id="chess-field21"></div>
+    <div class="chess-field" id="chess-field22"></div>
+    <div class="chess-field" id="chess-field23"></div>
+    <div class="chess-field" id="chess-field24"></div>
+    <div class="chess-field" id="chess-field25"></div>
+    <div class="chess-field" id="chess-field26"></div>
+    <div class="chess-field" id="chess-field27"></div>
+    <div class="chess-field" id="chess-field28"></div>
+    <div class="chess-field" id="chess-field29"></div>
+    <div class="chess-field" id="chess-field30"></div>
+    <div class="chess-field" id="chess-field31"></div>
+    <div class="chess-field" id="chess-field32"></div>
+    <div class="chess-field" id="chess-field33"></div>
+    <div class="chess-field" id="chess-field34"></div>
+    <div class="chess-field" id="chess-field35"></div>
+    <div class="chess-field" id="chess-field36"></div>
+    <div class="chess-field" id="chess-field37"></div>
+    <div class="chess-field" id="chess-field38"></div>
+    <div class="chess-field" id="chess-field39"></div>
+    <div class="chess-field" id="chess-field40"></div>
+    <div class="chess-field" id="chess-field41"></div>
+    <div class="chess-field" id="chess-field42"></div>
+    <div class="chess-field" id="chess-field43"></div>
+    <div class="chess-field" id="chess-field44"></div>
+    <div class="chess-field" id="chess-field45"></div>
+    <div class="chess-field" id="chess-field46"></div>
+    <div class="chess-field" id="chess-field47"></div>
+    <div class="chess-field" id="chess-field48"></div>
+    <div class="chess-field" id="chess-field49"></div>
+    <div class="chess-field" id="chess-field50"></div>
+    <div class="chess-field" id="chess-field51"></div>
+    <div class="chess-field" id="chess-field52"></div>
+    <div class="chess-field" id="chess-field53"></div>
+    <div class="chess-field" id="chess-field54"></div>
+    <div class="chess-field" id="chess-field55"></div>
+    <div class="chess-field" id="chess-field56"></div>
+    <div class="chess-field" id="chess-field57"></div>
+    <div class="chess-field" id="chess-field58"></div>
+    <div class="chess-field" id="chess-field59"></div>
+    <div class="chess-field" id="chess-field60"></div>
+    <div class="chess-field" id="chess-field61"></div>
+    <div class="chess-field" id="chess-field62"></div>
+    <div class="chess-field" id="chess-field63"></div>
+    <div class="chess-field" id="chess-field64"></div>
+</div>
+-->
+</body>
+
+</html>
