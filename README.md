@@ -1,6 +1,9 @@
 # Web Turorial - Part 1
 Dieses Tutorial gibt einen groben Überblick über die gundsätzlichen Komponenten der Web-Entwicklung: HTML, CSS, JavaScript
 
+
+
+
 ##### Ressourcen
 - F1: [https://www.formula1.com](https://www.formula1.com)
 - Hartlauer: [https://www.hartlauer.at/](https://www.hartlauer.at/)
@@ -277,7 +280,7 @@ Es gibt 3 Selektor-Gewichtungskategorien (0,0,0), hier in abnehmernder Spezifit�
 - [CSS-Tricks - CSS Selectos](https://css-tricks.com/css-selectors/)
 - [W3schools - CSS Selectors](https://www.w3schools.com/cssref/css_selectors.php)
 - [freecodecamp.org - CSS Selectors-Cheat Sheet](https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/)
-- [CSS Selekor - Cheat Sheet \(Bild)]((https://www.aiophotoz.com/the-ultimate-css-selectors-cheat-sheet-you-must-know-images-and/dGhlLXVsdGltYXRlLWNzcy1zZWxlY3RvcnMtY9hlYXQtc9hlZXQteW-1LW11c3Qta95vd3x8YWlvcGhvdG-6LmNvbXx8aHR0cHM6Ly-zdGF0aWMucGxhdHppLmNvbS-tZWRpYS-1c9VyX3VwbG-hZC-BcnRib9FyZCAxLTU0YmFlMzkzLTFkODctNGYwZC1hYTZjLWI3ZmMyZmQzZDczZi5qcGc.gif.html))
+- [CSS Selekor - Cheat Sheet]((https://www.aiophotoz.com/the-ultimate-css-selectors-cheat-sheet-you-must-know-images-and/dGhlLXVsdGltYXRlLWNzcy1zZWxlY3RvcnMtY9hlYXQtc9hlZXQteW-1LW11c3Qta95vd3x8YWlvcGhvdG-6LmNvbXx8aHR0cHM6Ly-zdGF0aWMucGxhdHppLmNvbS-tZWRpYS-1c9VyX3VwbG-hZC-BcnRib9FyZCAxLTU0YmFlMzkzLTFkODctNGYwZC1hYTZjLWI3ZmMyZmQzZDczZi5qcGc.gif.html))
 - [MDN - Pseudoklassen](https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-classes)
 - [MDN - Pseudo-Elemente](https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-elements)
 - [MDN - Spezifität](https://developer.mozilla.org/de/docs/Web/CSS/CSS_cascade/Specificity)
@@ -395,7 +398,7 @@ const date = new Date("2022-03-25");
 ### ECMA
 JavaScript ist standardisiert bei [Ecma International](https://ecma-international.org/) — der europäischen Organisation zur Standardisierung von Informations- und Kommunikationssystemen (ECMA war früher ein Akronym für die European Computer Manufacturers Association), um eine standardisierte, internationale Programmiersprache auf Basis von JavaScript zu liefern. Diese standardisierte Version von JavaScript, genannt ECMAScript, verhält sich in allen Anwendungen, die den Standard unterstützen, gleich. Unternehmen können die offene Standardsprache nutzen, um ihre Implementierung von JavaScript zu entwickeln. Der ECMAScript-Standard ist in der ECMA-262-Spezifikation dokumentiert.
 
-###### Ressourcen:
+##### Ressourcen:
 - [Ecma Internatinal](https://ecma-international.org/)
 
 ### JSON (JavaScript Object Notation)
@@ -575,15 +578,134 @@ let lastParagraph = document.querySelectorAll("div p.theLastParagraph")
 - [GeeksForGeeks - How to select DOM Elements in JavaScript ?](https://www.geeksforgeeks.org/how-to-select-dom-elements-in-javascript/)
 
 ### Promises
-Ein `Promise` ist ein Objekt, das den endgültigen Abschluss oder das Scheitern einer asynchronen Operation repräsentiert.
+Ein Promise ist die Zusicherung oder Garantie, dass etwas in der Zukunft passieren wird.
+
+Mit dieser Zusicherung (Promise) gehen zwei mögliche Ergebnisse einher: Erfüllung (fulfillment) oder Nichterfüllung (failure). Ein Psomise ist an ein Ergebnis geknüpft, das seine Erfüllung bestätigt. Tritt dieses Ergebnis nicht ein, ist das Promise nicht erfüllt. Ein Promoise muss am Ende eines dieser Ergebnisse haben.
+
+In JavaScript ist ein Promise ein Objekt, das irgendwann in der Zukunft einen einzelnen Wert erzeugt. Ist das Promise erfolgreich, wird ein gültiger Wert erzeugt. Geht jedoch etwas schief, wird ein Grund für das Nichterfüllen des Promises angegeben. Die möglichen Ergebnisse ähneln denen von Promise im wirklichen Leben.
+
+JavaScript-Promise können einen von drei möglichen Zuständen annehmen. Diese Zustände zeigen den Fortschritt des Promises an. Sie sind:
+- Ausstehend (pending): Dies ist der Standardzustand eines definierten Promises.
+- Erfüllt (fulfilled): Dies ist der Zustand eines erfolgreichen  Promises.
+- Abgelehnt (rejected): Dies ist der Zustand eines fehlgeschlagenen Promises.
+
+Ein Promise wechselt von pending zu fulfilled oder von pending zu rejected - fulfilled und rejected kennzeichnen das Ende eines Versprechens.
+
+Ein `Promise` ist ein Objekt das als Übergabeparameter im Konstruktor ein Funtion hat, diese Funktion hat 2 Parameter, `resolve` und `reject`.
+`resolve` und `reject` sind eigentlich auch Funktionen die aufgerufen werden abhängig vom Ausgang der asynchronen Operation.
+
+Wenn ein Promise erzeugt wird befindet es sich im 'pendings' - Status. Wenn die `resolve` Funktion aufgerufen wird geht das Promise in den 'fulfilled' - Status, wird die `reject` Funktion aufgerufen geht es in den 'rejected' - Status. 
+
+**Beispiel - Promise erstellen**
+```JS
+const promise = new Promise((resolve, reject) => {
+  setTimeout(function() {
+    const sum = 4 + 5;
+    if(isNaN(sum)) {
+      reject('Error while calculating sum.');
+    } else {
+      resolve(sum);
+    }
+  }, 2000);
+});
+
+```
+**Hinweis**: Die `resolve` und `reject` Funktionen können beliebig umgebnannt werden.
+
+Die `setTimeout` Funktion wird verwendet um einen Code zeitverzögert auszuführen. In diesem Beispiel wird nach `2000` ms (2 Sekunden) das Promises der Summe von  4 + 5 aufgelöst.
+
+
+Um das Ergebnis des Promises zu verwnden müssen Callbacks definiert werden, dafür werden `.then` und `.catch` verwendet.
+
+**Beispiel - Promiseergebiss verwenden**
+```JS
+const promise = new Promise((resolve, reject) => {
+  setTimeout(function() {
+    const sum = 4 + 5;
+    if(isNaN(sum)) {
+      reject('Error while calculating sum.');
+    } else {
+      resolve(sum);
+    }
+  }, 2000);
+});
+
+promise.then((result) => {
+  console.log(result);
+}).catch((error) => {
+  console.error(error);
+})
+```
+**Hinweis**: Die `result` und `error` Parameter können beliebig umgebnannt werden.
+
+Jedesmal wenn `resolve` aufgerufen wird, gibt das Promise den Wert der der `resolve` Funktion übergeben wurde zurück. Dieser Wert kann dann mit der `then` Funktion abgerufen werden.
+
+Bei einer fehlerhaften Operation wird die `reject` Funktion aufgerufen. Der Wert der dieser Funktion übergeben wurde kann dann mit der `catch` Funktion abgerufen werden.
+
+
+#### Async / await
+`Async` und `await` erlaub eine einfachere Handhabung von Promises. 
+
+Immer wenn das `async` zu einer Funktion hinzugefügt wird, gibt die Funktion ein Promise zurück.
+Um `await` verwenden zu können muss die die Funktion als `async` deklaiert werden.
+
+Beispiel eines promises die das Produkt von 2 Zahlen bildet.
+```JS
+function getProduct(a, b) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve(a * b);
+    }, 1000);
+  });
+}
+```
+
+Vergleich von `then`/`catch` und `async`/`await`
+```JS
+// then / catch
+getProduct(2, 4)
+  .then(function (result) {
+    getProduct(result, 2)
+      .then(function (finalResult) {
+        console.log('final_result', finalResult);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+
+// async / await
+const printResult = async () => {
+  try {
+    const result = await getProduct(2, 4);
+    const finalResult = await getProduct(result, 2); 
+    console.log('final_result', finalResult); 
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+printResult();
+```
+**Hinweis:** Es muss immer ein `try`/`catch` - Block um das `await` verwendet werden damit bei einem abgelehnten Promise der relevante Code im `catch` - Blcok ausgefüher werden kann.
+
+Der Code der `async`/`await` verwendet ist cleaner und auch einfacher zu verstehen als die Verkettung der Promises mit `then`.
 
 
 ##### Ressourcen
+- [freecodecamp.org - How Promises Work in JavaScript – A Comprehensive Beginner's Guide](https://www.freecodecamp.org/news/guide-to-javascript-promises/)
+- [freecodecamp.org - How to Use JavaScript Promises – Callbacks, Async/Await, and Promise Methods Explained](https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/)
+- [MDN - setTimeout](https://developer.mozilla.org/de/docs/Web/API/Window/setTimeout)
 - [MDN - Verwendung von Promises](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Using_promises)
 - [MDN - Promise](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [W3schools - JavaScript Promises](https://www.w3schools.com/Js/js_promise.asp)
-- [W3schools - JavaScript Async](https://www.w3schools.com/Js/js_async.asp)
 - [GeeksForGeeks - JavaScript Promise](https://www.geeksforgeeks.org/javascript-promise/)
 - [andyshora.com - Promises in AngularJS, Explained as a Cartoon](https://www.andyshora.com/promises-angularjs-explained-as-cartoon.html)
+- [W3schools - JavaScript Async](https://www.w3schools.com/Js/js_async.asp)
+- [dev.to - A key difference between .then and aysnc-await in JavaScript](https://dev.to/kylejb/a-key-difference-between-then-and-async-await-in-javascript-53e9)
 
 
