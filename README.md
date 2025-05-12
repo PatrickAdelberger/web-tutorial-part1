@@ -1,17 +1,17 @@
 # Web Turorial - Part 1
 Dieses Tutorial gibt einen groben Überblick über die gundsätzlichen Komponenten der Web-Entwicklung: HTML, CSS, JavaScript
 
-#### Ressourcen
+##### Ressourcen
 - F1: [https://www.formula1.com](https://www.formula1.com)
 - Hartlauer: [https://www.hartlauer.at/](https://www.hartlauer.at/)
 - D3 Tutorial (JKU ICG): [https://github.com/JKU-ICG/d3tutorial?tab=readme-ov-file#html](https://github.com/JKU-ICG/d3tutorial?tab=readme-ov-file#html)
-- MDN (Mozilla Developer Network) Web Docs: [https://developer.mozilla.org/de/](https://developer.mozilla.org/de/)
 - W3Schools: [https://www.w3schools.com/](https://www.w3schools.com/)
-
+- MDN (Mozilla Developer Network) Web Docs: [https://developer.mozilla.org/de/](https://developer.mozilla.org/de/)
+- MDN - Richtlinien zum Schreiben von Code: [https://developer.mozilla.org/de/docs/MDN/Writing_guidelines/Code_style_guide](https://developer.mozilla.org/de/docs/MDN/Writing_guidelines/Code_style_guide)
 
 ## Entwicklungsumgebung
 
-### Browser Developmetn Tools
+### Browser Developer Tools
 Die Developer Tools bieten eine Vielzahl an Tools für die Webentwicklung.
 
 Unter anderem stehen Ihnen zur Verfügung:
@@ -30,7 +30,7 @@ Unter anderem stehen Ihnen zur Verfügung:
 
 Jeder gängige Webbrowser (Firefox, Safari, Edge, Internet Explorer usw.) verfügt über integrierte Entwicklertools.
 
-#### Ressourcen
+##### Ressourcen
 - [Mozilla Web-Docs: Was sind Entwicklertools des Browsers](https://developer.mozilla.org/de/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools) 
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools?hl=de)
 - [Firefox Developer Tools](https://firefox-source-docs.mozilla.org/devtools-user/)
@@ -50,11 +50,11 @@ Bei der Verwendung des VSCode kann die [Live Server](https://marketplace.visuals
 
 
 
-#### Ressourcen
+##### Ressourcen
 - [VSCode Erweiterungen](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [VSCode - HTML Shortcuts](https://dev.to/peta_s/html-shortcuts-in-vs-code-35nf)
-
+- [MDN - Richtlinien zum Schreiben von Code](https://developer.mozilla.org/de/docs/MDN/Writing_guidelines/Code_style_guide)
 
 ## HTML (HyperText Markup Language)
 ### HTML-Element
@@ -73,7 +73,7 @@ Einige Elemtnte sind selbst schließend, das heißt `<tag />` entspricht `<tag><
 ![Aufbau HTML-Element](./images/readme/html_element_structure.png)
 Quelle: [https://codetheweb.blog/assets/img/posts/html-syntax/tag-structure-2.png](https://codetheweb.blog/assets/img/posts/html-syntax/tag-structure-2.png)
 
-#### Ressourcen
+##### Ressourcen
 - [tech.io - HTML syntax for beginners](https://tech.io/playgrounds/8240/html-syntax-for-beginners)
 - [MDN - Liste aller HTML-Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
 - [MDN - Grundlegende HTML-Syntax](https://developer.mozilla.org/de/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax)
@@ -125,7 +125,7 @@ Beispiel für ein typisches HTML-Dokument:
 </html>
 ```
 
-#### Ressourcen
+##### Ressourcen
 - [web.dev- Dokumentstruktur](https://web.dev/learn/html/document-structure?hl=de)
 - [MDN - Metadaten von Websiten](https://developer.mozilla.org/de/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
 - [MDN - \<meta> tag](https://developer.mozilla.org/de/docs/Web/HTML/Reference/Elements/meta)
@@ -142,7 +142,7 @@ Quelle: [https://terminallearning.com/devHtml/htmlDom.html](https://terminallear
 
 Während HTML eine textuelle Darstellung eines Markup-Dokuments darstellt, ist das DOM (Document Object Model) dessen Programmierschnittstelle. DOM-Elemente enthalten weitere interne Eigenschaften und können über JavaScript aufgerufen und geändert werden.
 
-#### Ressourcen
+##### Ressourcen
 - [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
 - [MDN - Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
@@ -164,7 +164,7 @@ Struktur einer CSS Regel:
 Quelle: [https://css-tricks.com/css-ruleset-terminology/](https://css-tricks.com/css-ruleset-terminology/)
 
 
-#### Ressourcen
+##### Ressourcen
 - [MDN - CSS (Cascading Style Sheets)](https://developer.mozilla.org/de/docs/Web/CSS)
 - [W3school - CSS Tutorial](https://www.w3schools.com/css/default.asp)
 
@@ -232,6 +232,7 @@ Ein Beispiel mit verschiedenen Selektoren:
 
 CSS Selektor - Cheat Sheet:
 ![CSS Selektoren - Cheat Sheet](./images/readme/CSS_cheat_sheat_WDS.png)
+
 Quelle [https://www.aiophotoz.com/the-ultimate-css-selectors-cheat-sheet-you-must-know-images](https://www.aiophotoz.com/the-ultimate-css-selectors-cheat-sheet-you-must-know-images-and/dGhlLXVsdGltYXRlLWNzcy1zZWxlY3RvcnMtY9hlYXQtc9hlZXQteW-1LW11c3Qta95vd3x8YWlvcGhvdG-6LmNvbXx8aHR0cHM6Ly-zdGF0aWMucGxhdHppLmNvbS-tZWRpYS-1c9VyX3VwbG-hZC-BcnRib9FyZCAxLTU0YmFlMzkzLTFkODctNGYwZC1hYTZjLWI3ZmMyZmQzZDczZi5qcGc.gif.html)
 
 #### Pseudoklassen
@@ -263,38 +264,326 @@ p::first-line {
 Spezifität ist ein Algorithmus, der das angewendete Gewicht für eine gegebene CSS-Deklaration berechnet. Das Gewicht wird durch die Anzahl der Selektoren in jeder Gewichtungskategorie im Selektor bestimmt, der mit dem Element (oder Pseudo-Element) übereinstimmt. Wenn es zwei oder mehr Deklarationen gibt, die unterschiedliche Eigenschaftswerte für dasselbe Element bereitstellen, wird der Deklarationswert im Stilblock angewendet, der den übereinstimmenden Selektor mit dem größten algorithmischen Gewicht hat.
 Der Spezifitätsalgorithmus ist im Grunde ein Drei-Spalten-Wert aus drei Kategorien oder Gewichten - ID, CLASS und TYPE - entsprechend den drei Arten von Selektoren
 
-Es gibt 3 Selektor-Gewichtungskategorien, hier in abnehmernder Spezifität:
+Es gibt 3 Selektor-Gewichtungskategorien (0,0,0), hier in abnehmernder Spezifität:
 - ID-Spalte, z.B. `#myID`
 - CLASS-Spalte, z.B. `.myClass`
 - TYPE-Spalte, z.B. `p`
 
 
 
-#### Ressourcen
+##### Ressourcen
 - [MDN - CSS Selektoren](https://developer.mozilla.org/de/docs/Web/CSS/CSS_selectors)
 - [MDN - CSS Selector-Struktur](https://developer.mozilla.org/de/docs/Web/CSS/CSS_selectors/Selector_structure#simple_selector)
 - [CSS-Tricks - CSS Selectos](https://css-tricks.com/css-selectors/)
 - [W3schools - CSS Selectors](https://www.w3schools.com/cssref/css_selectors.php)
 - [freecodecamp.org - CSS Selectors-Cheat Sheet](https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/)
-- [CSS Selekor - Cheat Sheet (Bild)]((https://www.aiophotoz.com/the-ultimate-css-selectors-cheat-sheet-you-must-know-images-and/dGhlLXVsdGltYXRlLWNzcy1zZWxlY3RvcnMtY9hlYXQtc9hlZXQteW-1LW11c3Qta95vd3x8YWlvcGhvdG-6LmNvbXx8aHR0cHM6Ly-zdGF0aWMucGxhdHppLmNvbS-tZWRpYS-1c9VyX3VwbG-hZC-BcnRib9FyZCAxLTU0YmFlMzkzLTFkODctNGYwZC1hYTZjLWI3ZmMyZmQzZDczZi5qcGc.gif.html))
+- [CSS Selekor - Cheat Sheet \(Bild)]((https://www.aiophotoz.com/the-ultimate-css-selectors-cheat-sheet-you-must-know-images-and/dGhlLXVsdGltYXRlLWNzcy1zZWxlY3RvcnMtY9hlYXQtc9hlZXQteW-1LW11c3Qta95vd3x8YWlvcGhvdG-6LmNvbXx8aHR0cHM6Ly-zdGF0aWMucGxhdHppLmNvbS-tZWRpYS-1c9VyX3VwbG-hZC-BcnRib9FyZCAxLTU0YmFlMzkzLTFkODctNGYwZC1hYTZjLWI3ZmMyZmQzZDczZi5qcGc.gif.html))
 - [MDN - Pseudoklassen](https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-classes)
 - [MDN - Pseudo-Elemente](https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-elements)
 - [MDN - Spezifität](https://developer.mozilla.org/de/docs/Web/CSS/CSS_cascade/Specificity)
 
-### Stylings
-
 
 ### Layout
+Mit CSS-Seitenlayout-Techniken können Elemente auf einer Webseite positioniert werden, relativ zu den folgenden Faktoren: ihrer Standardposition im normalen Layoutfluss, den anderen sie umgebenden Elementen, ihrem übergeordneten Container und dem Hauptsichtfeld/Fenster.
+
+#### Ressources
+- [MDN - Einführung in das CSS Layout](https://developer.mozilla.org/de/docs/Learn_web_development/Core/CSS_layout/Introduction)
+- [MDN -  display CSS Property](https://developer.mozilla.org/de/docs/Web/CSS/display)
+- [W3schools - CSS Layout: The display Property](https://www.w3schools.com/css/css_display_visibility.asp)
+- [freecodecamp.org - The CSS Display Property](https://developer.mozilla.org/de/docs/Web/CSS/display)
 
 #### Grid-Layout
-#### Flex-Layout
+Das CSS-Grid-Layout ist ein zweidimensionales Layoutsystem für das Web. Es können Inhalte in Zeilen und Spalten organisiert werden und bietet viele Funktionen, um das Erstellen komplexer Layouts zu vereinfachen.
+
+![CSS Grid - Bereich der Zellen](./images/readme/css_grid_grid-template-areas.png)
+
+Quelle: [https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas)
+
+##### Beispiel
+```CSS
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 250px;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+.item {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+  align-self: center;
+}
+```
+
+###### Ressourcen
+- [MDN - CSS-Grid-Layout (Learn Web-Dev)](https://developer.mozilla.org/de/docs/Learn_web_development/Core/CSS_layout/Grids)
+- [MDN - CSS-Grid-Layout](https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout.)
+- [css-tricks - CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+
+#### Flexbox-Layout
+Flexbox ist eine eindimensionale Layoutmethode zum Anordnen von Elementen in Zeilen oder Spalten. Elemente flexen (dehnen sich aus), um zusätzlichen Raum zu füllen oder ziehen sich zusammen, um in kleinere Räume zu passen.
+
+![CSS Flexbox - Anordnung der Elemente](./images/readme/css_flex_justiy-content.png)
+
+Quelle: [https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-justify-content](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-justify-content)
+
+##### Beispiel
+```CSS
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-self: center;
+}
+```
+
+
+###### Ressourcen
+- [MDN - Flexbox (Learn Web-Dev)](https://developer.mozilla.org/de/docs/Learn_web_development/Core/CSS_layout/Flexbox)
+- [MDN - CSS Flexible Box Layout](https://developer.mozilla.org/de/docs/Web/CSS/CSS_flexible_box_layout)
+- [css-tricks - CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 
 ## JavaScript
-### Verwednung in HTML; Wo und Wie?
-### var, let, const
-### Selektion von HTML - Elementen
-### Console.log
+JavaScript ist eine plattformübergreifende, objektorientierte Skriptsprache, die verwendet wird, um Webseiten interaktiv zu gestalten (zum Beispiel komplexe Animationen, klickbare Buttons, Popup-Menüs usw.).
+In einer Host-Umgebung (zum Beispiel einem Webbrowser) kann JavaScript mit den Objekten seiner Umgebung verbunden werden, um programmatische Kontrolle über diese zu bieten.
+
+JavaScript enthält eine Standardbibliothek von Objekten, wie `Array`, `Map` und `Math`, und einen Kernsatz von Sprachelementen wie Operatoren, Kontrollstrukturen und Anweisungen.
+
+```JS
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25"); 
+```
+
+
+###### Ressourcen:
+- [MDN - JavaScript](https://developer.mozilla.org/de/docs/Web/JavaScript)
+- [MDN - JavaScript Einführung](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Introduction)
+- [MDN - JavaScript-Datentypen und Datenstrukturen](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Data_structures)
+- [W3school - JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+- [W3school - JavaScript Data Types](https://www.w3schools.com/js/js_datatypes.asp)
+
+### ECMA
+JavaScript ist standardisiert bei [Ecma International](https://ecma-international.org/) — der europäischen Organisation zur Standardisierung von Informations- und Kommunikationssystemen (ECMA war früher ein Akronym für die European Computer Manufacturers Association), um eine standardisierte, internationale Programmiersprache auf Basis von JavaScript zu liefern. Diese standardisierte Version von JavaScript, genannt ECMAScript, verhält sich in allen Anwendungen, die den Standard unterstützen, gleich. Unternehmen können die offene Standardsprache nutzen, um ihre Implementierung von JavaScript zu entwickeln. Der ECMAScript-Standard ist in der ECMA-262-Spezifikation dokumentiert.
+
+###### Ressourcen:
+- [Ecma Internatinal](https://ecma-international.org/)
+
+### JSON (JavaScript Object Notation)
+JavaScript Object Notation (JSON) ist ein standardisiertes, textbasiertes Format zur Darstellung strukturierter Daten, basierend auf der Syntax von JavaScript-Objekten. Es wird häufig für die Übertragung von Daten in Webanwendungen verwendet (z. B. um Daten vom Server zum Client zu senden, damit diese auf einer Webseite angezeigt werden, oder umgekehrt). Sie werden es häufig antreffen, daher bieten wir Ihnen in diesem Artikel alles, was Sie benötigen, um mit JSON in JavaScript zu arbeiten, einschließlich des Analysierens von JSON, damit Sie auf die darin enthaltenen Daten zugreifen können, und des Erstellens von JSON.
+
+```JSON
+{
+    "firstName": "John",
+    "lastName": "Snow",
+    "age": 25,
+    "children": [],
+    "spouse": null,
+    "address": {
+        "street": "7504 Taylor Drive",
+        "city": "New York City",
+        "state": "New York",
+        "postalCode": "11238"
+    },
+    "phoneNumbers": [
+        {
+            "type": "mobile",
+            "number": "212 555-3346"
+        },
+        {
+            "type": "fax",
+            "number": "646 555-4567"
+        }
+    ]
+}
+```
+
+##### Ressourcen
+- [MDN - Arbeiten mit JSON](https://developer.mozilla.org/de/docs/Learn_web_development/Core/Scripting/JSON)
+- [Techie Delight - JSON Tutorial – Introduction, Structure, Syntax Rules, and Data Exchange](https://www.techiedelight.com/json-introduction/)
+- [W3schools - JSON - Introduction](https://www.w3schools.com/js/js_json_intro.asp)
+
+### Var, Let, Const
+Und in JavaScript verwenden wir sowohl die Schlüsselwörter `let` als auch `var`, um Variablen zu deklarieren.
+
+Einige Leute denken, dass diese beiden Schlüsselwörter austauschbar verwendet werden können, aber das stimmt nicht. Die Hauptunterschiede zwischen den beiden können zu schwerwiegenden Fehlern in unserer Programmierung führen.
+
+Vor dem ES6-Update auf JavaScript gab es nur eine Möglichkeit, Variablen und Konstanten in JavaScript zu deklarieren. Aber seit dem ES6-Update haben wir jetzt die Schlüsselwörter `let` und `const`, die zum Deklarieren von Variablen und Konstanten verwendet werden.
+
+Einer der Hauptgründe für das Hinzufügen der Schlüsselwörter `let` und `const` zu JavaScript war, dass die mit dem Schlüsselwort `var` deklarierte Variable nicht der Block war, in dem sie deklariert wurde. Stattdessen war sein Umfang auf die Funktion beschränkt, was einige Programmierprobleme verursachte.
+
+##### Beispiel
+```JS
+ var cnt = 0;
+ var test = 'test';
+
+ let amount = 0;
+ let happy = 'sugar';
+
+ const maxNumber = 5;
+ const myName = 'name';
+```
+
+##### Ressource
+- [DekftStack - Unterschied zwischen let und var in JavaScript](https://www.delftstack.com/de/howto/javascript/javascript-let-vs-var/)
+- [MDN - var](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/var)
+- [MDN - let](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/let)
+- [MDN - const](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/const)
+- [freecodecamp.org - Var, Let, Const - What's the Difference?](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
+- [GeeksForGeeks - Differnece between var, let, and const keywords in JavaScript](https://www.geeksforgeeks.org/difference-between-var-let-and-const-keywords-in-javascript/)
+
+### Console
+Das console-Objekt bietet Zugriff auf die Debugging-Konsole (z. B. die Web-Konsole in Firefox).
+
+Implementierungen der Console-API können sich je nach Laufzeitumgebung unterscheiden. Insbesondere können einige `console`-Methoden in einigen Online-Editoren und Entwicklungsumgebungen (IDEs) unterschiedlich funktionieren oder überhaupt nicht verfügbar sein. 
+
+```JS
+// log message
+console.log("test");
+
+// debug message
+console.debug("debug");
+
+// warnung
+console.warn("warn");
+
+//error
+console.error("error");
+
+
+
+for (let i=0;i<maxCnt;i++) {
+  console.count("loop-counter");
+}
+```
+
+##### Ressourcen
+- [MDN - console](https://developer.mozilla.org/de/docs/Web/API/console)
+- [W3schools - Window Console Object](https://www.w3schools.com/jsref/obj_console.asp)
+
 ### Equals
-### Async / Promises
+JavaScript bietet drei verschiedene Methoden zum Wertevergleich:
+- `===` — strikte Gleichheit (dreifach gleich)
+- `==` — lose Gleichheit (doppelt gleich)
+- `Object.is()`
+
+Welche Methode gewählt wird, hängt davon ab, welche Art von Vergleich durchgeführt werden soll.
+Kurz gesagt:
+
+- Doppelt gleich (`==`) führt eine Typkonvertierung durch, wenn zwei Dinge verglichen werden, und behandelt `NaN`, `-0` und `+0` speziell gemäß IEEE 754 (also `NaN != NaN` und `-0 == +0`);
+- Dreifach gleich (`===`) führt denselben Vergleich wie doppelt gleich durch (einschließlich der speziellen Behandlung für `NaN`, `-0` und `+0`), jedoch ohne Typkonvertierung; wenn die Typen unterschiedlich sind, wird `false` zurückgegeben.
+- `Object.is()` führt keine Typkonvertierung und keine spezielle Behandlung für `NaN`, `-0` und `+0` durch (was ihm dasselbe Verhalten wie `===` gibt, abgesehen von diesen speziellen numerischen Werten).
+
+
+##### Ressourcen
+- [MDN - Gleichheitsvergleiche und Gleichheit](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness)
+- [W3schools - JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
+- [GeeksForGeeks - JavaScript ‘===’ vs ‘==’Comparison Operator](https://www.geeksforgeeks.org/javascript-vs-comparison-operator/)
+
+### Selektion von HTML - Elementen
+In JavaScript gibt es verschiedene Möglichkeiten ein bzw. mehrere HTML - Elemente auszuwählen:
+- `getElementById`
+- `getElementsByClassName`
+- `getElementsByTagName`
+- `getElementsByName`
+- `querySelector`
+- `querySelectorAll`
+
+Für die beiden Methoden `querySelector` und `querySelectorAll` werden Selektoren angegeben die den der CSS Selektoren entsprechen, z.B. `querySelector(#id)`, `querySelectorAll(.class)`
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektion: HTML-Element</title>
+</head>
+<body>
+  <div>
+    <h2 id="myHeading">Hi there!</h2>
+    <p class="myParagraphs">Look at us,</p>
+    <p class="myParagraphs">we’re a group</p>
+    <p class="myParagraphs theLastParagraph" name="theLastOne">of paragraph tags.</p>
+  </div>
+</body>
+<script>
+// --- getElementBy
+// selects the element with id="myHeading" 
+let mainHeading = document.getElementById("myHeading"); 
+
+// ---  getElementsBy
+// selects all elements with class = "myParagraphs"
+let allParagraphs = document.getElementsByClassName("myParagraphs");
+// selects all elements with the <p> - tag
+let allParagraphs = document.getElementsByTagName("p");
+// selects all elements with name = "theLastOne"
+let theLastOne = document.getElementsByName("theLastOne");
+
+// ---  querySelector
+// selects the element with id="myHeading" 
+let mainHeading = document.querySelector("#myHeading");
+// selects the first element with a <h2> - tag that is a descendent of an <div> - element
+let mainHeading = document.querySelector("div h2");
+
+// ---  querySelectorAll
+// selects all elements that is <p> - tag with class 'theLastParagraph' and is a descendent of an <div> element
+let lastParagraph = document.querySelectorAll("div p.theLastParagraph")
+
+</script>
+</html>
+```
+
+##### Ressourcen
+- [MDN -  getElementByID](https://developer.mozilla.org/de/docs/Web/API/Document/getElementById)
+- [MDN -  getElementsByClassName](https://developer.mozilla.org/de/docs/Web/API/Document/getElementsByClassName)
+- [MDN -  getElementsByTagName](https://developer.mozilla.org/de/docs/Web/API/Document/getElementsByTagName)
+- [MDN -  getElementsByName](https://developer.mozilla.org/de/docs/Web/API/Document/getElementsByName)
+- [MDN -  querySelector](https://developer.mozilla.org/de/docs/Web/API/Document/querySelector)
+- [MDN -  querySelectorAll](https://developer.mozilla.org/de/docs/Web/API/Document/querySelectorAll)
+- [bydavidlange.com - 6 Ways to select HTML Elements with Javascript](https://bydavidlange.com/6-ways-to-select-html-elements-with-javascript/)
+- [GeeksForGeeks - How to select DOM Elements in JavaScript ?](https://www.geeksforgeeks.org/how-to-select-dom-elements-in-javascript/)
+
+### Promises
+Ein `Promise` ist ein Objekt, das den endgültigen Abschluss oder das Scheitern einer asynchronen Operation repräsentiert.
+
+
+##### Ressourcen
+- [MDN - Verwendung von Promises](https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Using_promises)
+- [MDN - Promise](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [W3schools - JavaScript Promises](https://www.w3schools.com/Js/js_promise.asp)
+- [W3schools - JavaScript Async](https://www.w3schools.com/Js/js_async.asp)
+- [GeeksForGeeks - JavaScript Promise](https://www.geeksforgeeks.org/javascript-promise/)
+- [andyshora.com - Promises in AngularJS, Explained as a Cartoon](https://www.andyshora.com/promises-angularjs-explained-as-cartoon.html)
 
 
