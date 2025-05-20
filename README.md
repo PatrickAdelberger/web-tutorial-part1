@@ -50,7 +50,7 @@ Im VSCode kann [Live Server](https://marketplace.visualstudio.com/items?itemName
 ### VSCode (Visual Studio Code)
 VSCode ist konstenlos und kann herunergeladen werden unter [https://code.visualstudio.com/](https://code.visualstudio.com/). Als Standard besitzt VSCode vordefinierte Shortcuts um schneller HTML-Elemente zu erstellen.
 
-Bei der Verwendung des VSCode kann die [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Erweiterung verwendet werde, dabei wird auch die Website automaisch neugeladen wenn es änderungen im Code gibt. 
+Bei der Verwendung des VSCode kann die [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Erweiterung verwendet werde, dabei wird auch die Website automaisch neugeladen wenn es Änderungen im Code gibt. 
 
 
 
@@ -437,7 +437,7 @@ JavaScript Object Notation (JSON) ist ein standardisiertes, textbasiertes Format
 - [W3schools - JSON - Introduction](https://www.w3schools.com/js/js_json_intro.asp)
 
 ### Var, Let, Const
-Und in JavaScript verwenden wir sowohl die Schlüsselwörter `let` als auch `var`, um Variablen zu deklarieren.
+In JavaScript verwenden wir sowohl die Schlüsselwörter `let` als auch `var`, um Variablen zu deklarieren.
 
 Einige Leute denken, dass diese beiden Schlüsselwörter austauschbar verwendet werden können, aber das stimmt nicht. Die Hauptunterschiede zwischen den beiden können zu schwerwiegenden Fehlern in unserer Programmierung führen.
 
