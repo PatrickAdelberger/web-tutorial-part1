@@ -45,6 +45,7 @@ Aus Sicherheitsgründen erlauben die meisten Browser das Laden zusätzlicher ext
 
 Für die Entwicklung ist daher ein lokaler WebServer notwendig. Es kann ein itegrierter Webserver der IDE verwendet werden. 
 
+Im VSCode kann [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) verwendet werden.
 
 ### VSCode (Visual Studio Code)
 VSCode ist konstenlos und kann herunergeladen werden unter [https://code.visualstudio.com/](https://code.visualstudio.com/). Als Standard besitzt VSCode vordefinierte Shortcuts um schneller HTML-Elemente zu erstellen.
